@@ -118,7 +118,7 @@ test("the section five activity fits inside the stage", async ({ page }) => {
 });
 
 test("the final comparison table fits inside the stage", async ({ page }) => {
-  await gotoSlide(page, 5, 9);
+  await gotoSlide(page, 5, 12);
   await expect(page.getByTestId("slide-heading")).toContainText("Projective vs Objective Assessment");
 
   // Reveal all four comparison rows.

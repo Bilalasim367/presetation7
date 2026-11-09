@@ -842,6 +842,36 @@ export const SECTIONS: readonly Section[] = [{
           "Run the sketch quickly; the point is not the drawing. Ask two pairs for one structural observation and one possible meaning. Then repeat the HTP caution aloud: the detail is a hypothesis that needs context, inquiry, and corroboration.",
       },
       {
+        id: "5-projective-advantages",
+        variant: "bullets",
+        heading: "Projective Assessment: Advantages",
+        subheading: "Depth and resistance to faking",
+        items: [
+          "**Hidden thoughts surface** — the person reports what they hide or do not consciously know.",
+          "**Harder to fake** — no right or wrong answer reduces deliberate impression management.",
+          "**Depth** — a fuller picture of feelings, conflicts, and inner life, not just a number.",
+        ],
+        builds: 3,
+        status: "final",
+        notes:
+          "Presented by Abdullah umar as part of the comparison. These are the strengths of the projective tradition: access to material that structured self-report may miss, and resistance to impression management. Use this slide to set up the final comparison honestly.",
+      },
+      {
+        id: "5-projective-limitations",
+        variant: "bullets",
+        heading: "Projective Assessment: Limitations",
+        subheading: "The cost of ambiguity",
+        items: [
+          "**Scoring differs** — two experts can interpret one response in different ways.",
+          "**Low reliability and validity** compared with structured measures.",
+          "**Time and training** — lengthy administration and specialised expertise.",
+        ],
+        builds: 3,
+        status: "final",
+        notes:
+          "Presented by Abdullah umar as part of the comparison. These are the costs of the projective bargain: inter-rater disagreement, weaker psychometric evidence, and heavy demands on time and training. Set this beside the objective limitations already covered so the comparison is fair.",
+      },
+      {
         id: "5-comparison",
         variant: "table",
         heading: "Projective vs Objective Assessment",
