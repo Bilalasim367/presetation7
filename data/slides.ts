@@ -781,21 +781,6 @@ export const SECTIONS: readonly Section[] = [{
           "Balance the interpretive richness against the psychometric weakness. The HTP is useful for building rapport and generating hypotheses; it is not a standardised score that can travel across clinicians without training. Say this plainly.",
       },
       {
-        id: "5-activity",
-        variant: "activity",
-        heading: "Read the Drawing",
-        subheading: "A 60-second sketch · observe structure before meaning",
-        items: [
-          "Sketch a quick house, a tree, and a person — no artistic skill needed.",
-          "Swap with a neighbour and name one structural detail: size, proportion, or placement.",
-          "Offer one possible meaning, then label it a hypothesis, not a diagnosis.",
-        ],
-        builds: 0,
-        status: "final",
-        notes:
-          "Run the sketch quickly; the point is not the drawing. Ask two pairs for one structural observation and one possible meaning. Then repeat the HTP caution aloud: the detail is a hypothesis that needs context, inquiry, and corroboration.",
-      },
-      {
         id: "5-projective-advantages",
         variant: "bullets",
         heading: "Projective Assessment: Advantages",
