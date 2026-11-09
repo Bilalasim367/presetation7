@@ -210,3 +210,5 @@ with `#sN/M`; press `→` until the slide is complete.
 **Text looks too small on a very small screen.** The design target is a lecture
 projector, not a phone. Use fullscreen (`F`) and a 16:9 display for the intended
 result.
+#   - p e r s o n a l i t y - a s s e s s m e n t - p r e s e n t a t i o n  
+ 
