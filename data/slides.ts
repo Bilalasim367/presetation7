@@ -781,22 +781,6 @@ export const SECTIONS: readonly Section[] = [{
           "Balance the interpretive richness against the psychometric weakness. The HTP is useful for building rapport and generating hypotheses; it is not a standardised score that can travel across clinicians without training. Say this plainly.",
       },
       {
-        id: "5-objective-limits",
-        variant: "bullets",
-        heading: "Objective Assessment: Limitations",
-        subheading: "What structure costs",
-        items: [
-          "**No depth** — fixed options cannot capture nuance, contradiction, or material the person cannot report directly.",
-          "**Chance of guessing** — forced choice and true/false formats invite random responding.",
-          "**No creativity** — the person's own language and associations are constrained by the items.",
-          "**Limited answers** — when experience does not fit the options, the test cannot hear it.",
-        ],
-        builds: 4,
-        status: "final",
-        notes:
-          "Presented by Abdullah umar as part of the comparison. These are the costs of the objective bargain: structure buys comparability and speed, but it cannot hear what the person cannot tick. Use this slide to set up the final comparison table honestly — neither column is a free lunch.",
-      },
-      {
         id: "5-activity",
         variant: "activity",
         heading: "Read the Drawing",

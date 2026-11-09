@@ -155,10 +155,8 @@ export const navReducer = (state: NavState, action: NavAction): NavState => {
         return { ...state, view: "hub" };
       }
 
-      if (state.build > 0) {
-        return { ...state, build: state.build - 1 };
-      }
-
+      // Step back a whole slide at a time (all of its content together) rather
+      // than peeling builds off one by one, so text never disappears piecemeal.
       if (state.slide > 1) {
         const previousSlide = section.slides[state.slide - 2];
         return {
