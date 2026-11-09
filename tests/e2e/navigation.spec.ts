@@ -279,9 +279,9 @@ test("keys 1–5 jump directly to each section cover", async ({ page }) => {
   const covers = [
     { key: "1", section: 1, total: 8, heading: "The Persona Behind the Pattern", hud: "Bilal" },
     { key: "2", section: 2, total: 7, heading: "Two Ways of Seeing a Person", hud: "Fatima" },
-    { key: "3", section: 3, total: 8, heading: "The Objective Lens", hud: "Iman fatima" },
-    { key: "4", section: 4, total: 7, heading: "The Projective Lens", hud: "Mahnoor" },
-    { key: "5", section: 5, total: 12, heading: "Ten Cards, Three Drawings", hud: "Abdullah umar" },
+    { key: "3", section: 3, total: 9, heading: "The Objective Lens", hud: "Iman fatima" },
+    { key: "4", section: 4, total: 8, heading: "The Projective Lens", hud: "Mahnoor" },
+    { key: "5", section: 5, total: 13, heading: "Ten Cards, Three Drawings", hud: "Abdullah umar" },
   ];
 
   for (const cover of covers) {
@@ -301,8 +301,9 @@ test("every section provides a live activity or quiz", async ({ page }) => {
   const activities = [
     { section: 1, slide: 8, total: 8, heading: "Same Situation, Different Response" },
     { section: 2, slide: 4, total: 7, heading: "Observe Us" },
-    { section: 4, slide: 7, total: 7, heading: "What Do You See?" },
-    { section: 5, slide: 8, total: 12, heading: "Read the Drawing" },
+    { section: 4, slide: 8, total: 8, heading: "What Do You See?" },
+    { section: 4, slide: 5, total: 8, heading: "Complete the Sentence" },
+    { section: 5, slide: 9, total: 13, heading: "Read the Drawing" },
   ];
 
   for (const activity of activities) {
@@ -315,18 +316,18 @@ test("every section provides a live activity or quiz", async ({ page }) => {
     await expect(page.getByTestId("activity-slide").locator("li")).toHaveCount(3);
   }
 
-  await gotoSlide(page, 4, 7);
+  await gotoSlide(page, 4, 8);
   await expect(page.getByTestId("inkblot-visual")).toBeVisible();
 
   // Section 3 now carries the objective quiz.
-  await gotoSlide(page, 3, 7);
+  await gotoSlide(page, 3, 8);
   await expect(page.getByTestId("slide-heading")).toContainText("Small Quiz");
 });
 
 test("the quiz starts closed, reveals one question at a time, and marks the answer", async ({
   page,
 }) => {
-  await gotoSlide(page, 3, 7);
+  await gotoSlide(page, 3, 8);
   await expect(page.getByTestId("slide-heading")).toContainText("Small Quiz");
   await expect(page.getByText("Ready when you are.")).toBeVisible();
   await expect(page.locator("[data-quiz-index]")).toHaveCount(0);
@@ -350,7 +351,7 @@ test("the quiz starts closed, reveals one question at a time, and marks the answ
   );
 
   await pressNext(page, 1);
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 3 · 8/8");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 3 · 9/9");
   await expect(page.getByTestId("slide-heading")).toContainText("A Fair and Structured Method");
 });
 
@@ -373,25 +374,25 @@ test("diagram slides use the new formal/informal and Rorschach scenes", async ({
 test("section five keeps its activity, comparison, references, and closing order", async ({
   page,
 }) => {
-  await gotoSlide(page, 5, 8);
+  await gotoSlide(page, 5, 9);
   await expect(page.getByTestId("slide-heading")).toContainText("Read the Drawing");
   await expect(page.getByTestId("activity-slide")).toBeVisible();
 
-  await gotoSlide(page, 5, 9);
-  await expect(page.getByTestId("slide-heading")).toContainText("Projective vs Objective Assessment");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 9/12");
-
   await gotoSlide(page, 5, 10);
-  await expect(page.getByTestId("slide-heading")).toContainText("Foundational Literature");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 10/12");
+  await expect(page.getByTestId("slide-heading")).toContainText("Projective vs Objective Assessment");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 10/13");
 
   await gotoSlide(page, 5, 11);
-  await expect(page.getByTestId("slide-heading")).toContainText("Two Lenses, One Person");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 11/12");
+  await expect(page.getByTestId("slide-heading")).toContainText("Foundational Literature");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 11/13");
 
   await gotoSlide(page, 5, 12);
+  await expect(page.getByTestId("slide-heading")).toContainText("Two Lenses, One Person");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 12/13");
+
+  await gotoSlide(page, 5, 13);
   await expect(page.getByTestId("slide-heading")).toContainText("Thank You");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 12/12");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 13/13");
 });
 
 test("section one completes through builds and slides, then persists", async ({ page }) => {

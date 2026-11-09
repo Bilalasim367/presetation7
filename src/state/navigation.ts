@@ -82,7 +82,7 @@ const startSection = (state: NavState, section: SectionId): NavState => {
     view: "section",
     section,
     slide: 1,
-    build: 0,
+    build: getBuildCount(getSection(section)?.slides[0] as Slide),
     overlay: null,
     blank: false,
     runId: state.runId + 1,
@@ -125,7 +125,12 @@ export const navReducer = (state: NavState, action: NavAction): NavState => {
       }
 
       if (state.slide < section.slides.length) {
-        return { ...state, slide: state.slide + 1, build: 0 };
+        const nextSlide = section.slides[state.slide];
+        return {
+          ...state,
+          slide: state.slide + 1,
+          build: nextSlide ? getBuildCount(nextSlide) : 0,
+        };
       }
 
       const completed = new Set(state.completed);
@@ -237,7 +242,7 @@ export const navReducer = (state: NavState, action: NavAction): NavState => {
         view: "section",
         section: action.hashTarget.section,
         slide: action.hashTarget.slide,
-        build: 0,
+        build: getBuildCount(section.slides[action.hashTarget.slide - 1] as Slide),
         runId: state.runId + 1,
       };
     }

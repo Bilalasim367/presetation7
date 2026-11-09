@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import type { CardItem } from "@data/slides";
 import { getBuildCount } from "@data/slides";
 import { easeBezier, motionTokens } from "@design/tokens";
@@ -11,6 +11,7 @@ import { useBuildGlow } from "./useBuildGlow";
 import type { SlideViewProps } from "./types";
 
 export function CardsSlide({ section, slide, build }: SlideViewProps) {
+  const reducedMotion = useReducedMotion();
   const glowIndex = useBuildGlow(build);
   const items = (slide.items ?? []).filter(
     (item): item is CardItem => typeof item === "object" && item !== null,
@@ -34,9 +35,9 @@ export function CardsSlide({ section, slide, build }: SlideViewProps) {
                 key={`${slide.id}-${index}`}
                 className="relative flex min-h-[462px] flex-col border border-line bg-surface/35 p-6"
                 style={{ visibility: revealed ? "visible" : "hidden" }}
-                initial={false}
+                initial={reducedMotion ? false : { opacity: 0, y: 16 }}
                 animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 16 }}
-                transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier }}
+                transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier, delay: reducedMotion ? 0 : index * 0.1 }}
                 data-build-index={index}
                 data-revealed={revealed}
               >

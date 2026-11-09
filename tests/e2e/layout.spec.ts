@@ -102,7 +102,7 @@ test("the section one cover fits inside the stage", async ({ page }) => {
 });
 
 test("the section five activity fits inside the stage", async ({ page }) => {
-  await gotoSlide(page, 5, 8);
+  await gotoSlide(page, 5, 9);
   await expect(page.getByTestId("slide-heading")).toContainText("Read the Drawing");
 
   const box = await page.getByTestId("stage-surface").boundingBox();

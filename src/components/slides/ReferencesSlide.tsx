@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { getBuildCount } from "@data/slides";
 import { easeBezier, motionTokens } from "@design/tokens";
 import { RichText } from "./RichText";
@@ -9,6 +9,7 @@ import { useBuildGlow } from "./useBuildGlow";
 import type { SlideViewProps } from "./types";
 
 export function ReferencesSlide({ section, slide, build }: SlideViewProps) {
+  const reducedMotion = useReducedMotion();
   const glowIndex = useBuildGlow(build);
   const items = (slide.items ?? []).filter((item): item is string => typeof item === "string");
   const totalBuilds = getBuildCount(slide);
@@ -33,7 +34,7 @@ export function ReferencesSlide({ section, slide, build }: SlideViewProps) {
                 key={`${slide.id}-${index}`}
                 className="flex gap-6 border-t border-line py-4"
                 style={{ visibility: revealed ? "visible" : "hidden" }}
-                initial={false}
+                initial={reducedMotion ? false : { opacity: 0, y: 8 }}
                 animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 8 }}
                 transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier }}
                 data-build-index={index}

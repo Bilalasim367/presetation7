@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { easeBezier, motionTokens, type ThemeName } from "@design/tokens";
 import { getBuildCount, type Slide } from "@data/slides";
 import { RichText } from "./RichText";
@@ -78,6 +78,7 @@ function SlideVisual({
 }
 
 export function VisualTextSlide({ section, slide, build, theme }: SlideViewProps) {
+  const reducedMotion = useReducedMotion();
   const glowIndex = useBuildGlow(build);
   const items = (slide.items ?? []).filter((item): item is string => typeof item === "string");
   const totalBuilds = getBuildCount(slide);
@@ -101,7 +102,7 @@ export function VisualTextSlide({ section, slide, build, theme }: SlideViewProps
                   key={`${slide.id}-${index}`}
                   className="flex gap-5"
                   style={{ visibility: revealed ? "visible" : "hidden" }}
-                  initial={false}
+                  initial={reducedMotion ? false : { opacity: 0, y: 10 }}
                   animate={{ opacity: revealed ? 1 : 0, y: revealed ? 0 : 10 }}
                   transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier }}
                   data-build-index={index}

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import type { CardItem } from "@data/slides";
 import { getBuildCount } from "@data/slides";
 import { easeBezier, motionTokens } from "@design/tokens";
@@ -11,6 +11,7 @@ import { useBuildGlow } from "./useBuildGlow";
 import type { SlideViewProps } from "./types";
 
 export function FocusSlide({ section, slide, build }: SlideViewProps) {
+  const reducedMotion = useReducedMotion();
   const glowIndex = useBuildGlow(build);
   const items = (slide.items ?? []).filter(
     (item): item is CardItem => typeof item === "object" && item !== null,
@@ -37,9 +38,9 @@ export function FocusSlide({ section, slide, build }: SlideViewProps) {
                   background: `linear-gradient(140deg, color-mix(in srgb, ${accent} 8%, var(--t-surface)), var(--t-surface) 58%)`,
                   boxShadow: `0 0 70px color-mix(in srgb, ${accent} 7%, transparent)`,
                 }}
-                initial={false}
+                initial={reducedMotion ? false : { opacity: 0, scale: 0.985 }}
                 animate={{ opacity: revealed ? 1 : 0, scale: revealed ? 1 : 0.985 }}
-                transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier }}
+                transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier, delay: reducedMotion ? 0 : index * 0.15 }}
                 data-build-index={index}
                 data-revealed={revealed}
               >

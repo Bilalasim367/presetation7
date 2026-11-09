@@ -469,21 +469,16 @@ export const SECTIONS: readonly Section[] = [{
       {
         id: "3-tradeoffs",
         variant: "focus",
-        heading: "Advantages and Disadvantages",
-        subheading: "What structure buys and what it costs",
+        heading: "Advantages of Objective Assessment",
+        subheading: "What structure buys",
         items: [
           {
             title: "Advantages",
             icon: "ClipboardCheck",
             text: "**Fast scoring, no personal bias, the same rules for everyone, and clear results** that can be compared across people and settings.",
           },
-          {
-            title: "Disadvantages",
-            icon: "ClipboardCheck",
-            text: "**No depth, a chance of guessing, little room for creativity, and limited answers** when the person's experience does not fit the options.",
-          },
         ],
-        builds: 2,
+        builds: 1,
         status: "final",
         notes:
           "Hold both sides at once. Objective tests are excellent when comparison and efficiency matter; they are weak when the question requires nuance, contradiction, or material the person cannot report directly. This is the trade-off the final section will compare.",
@@ -574,6 +569,22 @@ export const SECTIONS: readonly Section[] = [{
           "Define projection before the test. The logic is simple: when the stimulus does not dictate a meaning, the meaning must come from the person. Credit Frank for the term and Freud for the underlying idea without reducing the method to a single theorist.",
       },
       {
+        id: "4-psychometrics-examples",
+        variant: "bullets",
+        heading: "Validity and Reliability in Practice",
+        subheading: "Two examples that make the difference concrete",
+        items: [
+          "**Validity** — a weighing machine that reports **length instead of weight** is not valid, however precise it looks. It measures the wrong thing.",
+          "**Reliability** — a weighing machine is **reliable** if it shows **50 kg every time** for the same person. It is consistent.",
+          "**The key insight:** reliability is necessary but **not sufficient** for validity. A test can be perfectly consistent and still measure the wrong thing.",
+          "**In practice:** a personality test must first be reliable (repeatable), then validated against the construct it claims to measure.",
+        ],
+        builds: 4,
+        status: "final",
+        notes:
+          "Use the weighing-machine examples to make validity and reliability concrete. First, show that a test can be precise but wrong (validity). Then show that consistency alone is not enough (reliability). Land on the key insight: reliability is necessary but not sufficient. This prepares the audience for the quiz question on reliability.",
+      },
+      {
         id: "4-characteristics",
         variant: "bullets",
         heading: "Four Defining Characteristics",
@@ -610,6 +621,22 @@ export const SECTIONS: readonly Section[] = [{
         status: "final",
         notes:
           "Contrast the media: TAT uses pictures and narrative; RISB uses language stems and completion. Both rely on the same assumption — the person fills in what the stimulus leaves open. Keep the examples concrete.",
+      },
+      {
+        id: "4-risb-activity",
+        variant: "activity",
+        heading: "Complete the Sentence",
+        subheading: "Activity · RISB in miniature · there are no wrong answers",
+        items: [
+          "Complete each stem with the first words that come to mind: **I feel happiest when ___.**",
+          "**My greatest fear is ___.**",
+          "**When I am alone, I ___.**",
+          "**People who know me would say I am ___.**",
+        ],
+        builds: 0,
+        status: "final",
+        notes:
+          "Read the four stems aloud and give the room thirty seconds. Collect two or three completions per stem. Debrief: the same stem produces very different completions, and the style of completion (emotion, length, avoidance) is the data — not the content alone. This is the RISB logic in miniature.",
       },
       {
         id: "4-advantages",
@@ -783,6 +810,22 @@ export const SECTIONS: readonly Section[] = [{
         status: "final",
         notes:
           "Balance the interpretive richness against the psychometric weakness. The HTP is useful for building rapport and generating hypotheses; it is not a standardised score that can travel across clinicians without training. Say this plainly.",
+      },
+      {
+        id: "5-objective-limits",
+        variant: "bullets",
+        heading: "Objective Assessment: Limitations",
+        subheading: "What structure costs",
+        items: [
+          "**No depth** — fixed options cannot capture nuance, contradiction, or material the person cannot report directly.",
+          "**Chance of guessing** — forced choice and true/false formats invite random responding.",
+          "**No creativity** — the person's own language and associations are constrained by the items.",
+          "**Limited answers** — when experience does not fit the options, the test cannot hear it.",
+        ],
+        builds: 4,
+        status: "final",
+        notes:
+          "Presented by Abdullah umar as part of the comparison. These are the costs of the objective bargain: structure buys comparability and speed, but it cannot hear what the person cannot tick. Use this slide to set up the final comparison table honestly — neither column is a free lunch.",
       },
       {
         id: "5-activity",

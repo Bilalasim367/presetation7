@@ -64,9 +64,9 @@ export function TableSlide({ section, slide, build }: SlideViewProps) {
                     key={`${slide.id}-${rowIndex}`}
                     className="border-b border-line"
                     style={{ visibility: revealed ? "visible" : "hidden" }}
-                    initial={false}
+                    initial={reducedMotion ? false : { opacity: 0 }}
                     animate={{ opacity: revealed ? 1 : 0 }}
-                    transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier }}
+                    transition={{ duration: motionTokens.duration.slow / 1000, ease: easeBezier, delay: reducedMotion ? 0 : rowIndex * 0.08 }}
                     data-build-index={rowIndex}
                     data-revealed={revealed}
                   >
