@@ -280,7 +280,7 @@ test("keys 1–5 jump directly to each section cover", async ({ page }) => {
     { key: "1", section: 1, total: 8, heading: "The Persona Behind the Pattern", hud: "Bilal" },
     { key: "2", section: 2, total: 7, heading: "Two Ways of Seeing a Person", hud: "Fatima" },
     { key: "3", section: 3, total: 9, heading: "The Objective Lens", hud: "Iman fatima" },
-    { key: "4", section: 4, total: 8, heading: "The Projective Lens", hud: "Mahnoor" },
+    { key: "4", section: 4, total: 6, heading: "The Projective Lens", hud: "Mahnoor" },
     { key: "5", section: 5, total: 15, heading: "Ten Cards, Three Drawings", hud: "Abdullah umar" },
   ];
 
@@ -301,8 +301,8 @@ test("every section provides a live activity or quiz", async ({ page }) => {
   const activities = [
     { section: 1, slide: 8, total: 8, heading: "Same Situation, Different Response" },
     { section: 2, slide: 4, total: 7, heading: "Observe Us" },
-    { section: 4, slide: 8, total: 8, heading: "What Do You See?" },
-    { section: 4, slide: 5, total: 8, heading: "Complete the Sentence" },
+    { section: 4, slide: 6, total: 6, heading: "What Do You See?" },
+    { section: 4, slide: 5, total: 6, heading: "Complete the Sentence" },
     { section: 5, slide: 9, total: 15, heading: "Read the Drawing" },
   ];
 
@@ -316,7 +316,7 @@ test("every section provides a live activity or quiz", async ({ page }) => {
     await expect(page.getByTestId("activity-slide").locator("li")).toHaveCount(3);
   }
 
-  await gotoSlide(page, 4, 8);
+  await gotoSlide(page, 4, 6);
   await expect(page.getByTestId("inkblot-visual")).toBeVisible();
 
   // Section 3 now carries the objective quiz.

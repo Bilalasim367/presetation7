@@ -638,36 +638,6 @@ export const SECTIONS: readonly Section[] = [{
           "Read the four stems aloud and give the room thirty seconds. Collect two or three completions per stem. Debrief: the same stem produces very different completions, and the style of completion (emotion, length, avoidance) is the data — not the content alone. This is the RISB logic in miniature.",
       },
       {
-        id: "4-advantages",
-        variant: "bullets",
-        heading: "Advantages",
-        subheading: "Depth and resistance to faking",
-        items: [
-          "**Hidden thoughts surface** — the person reports what they hide or do not consciously know.",
-          "**Harder to fake** — no right or wrong answer reduces deliberate impression management.",
-          "**Depth** — a fuller picture of feelings, conflicts, and inner life, not just a number.",
-        ],
-        builds: 3,
-        status: "final",
-        notes:
-          "Present the advantages as hypotheses with real clinical value, not as proof. The strongest claim is about depth and access to material that structured self-report may miss. The weakest claim is that any single response is a direct window into the unconscious.",
-      },
-      {
-        id: "4-limitations",
-        variant: "bullets",
-        heading: "Limitations",
-        subheading: "The cost of ambiguity",
-        items: [
-          "**Scoring differs** — two experts can interpret one response in different ways.",
-          "**Low reliability and validity** compared with structured measures.",
-          "**Time and training** — lengthy administration and specialised expertise.",
-        ],
-        builds: 3,
-        status: "final",
-        notes:
-          "Be candid. Inter-rater disagreement is the central psychometric problem. The method can generate rich hypotheses, but hypotheses still need corroboration. This sets up the objective tradition without turning the presentation into a trial of projective tests.",
-      },
-      {
         id: "4-activity",
         variant: "activity",
         heading: "What Do You See?",
