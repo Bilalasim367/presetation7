@@ -281,7 +281,7 @@ test("keys 1–5 jump directly to each section cover", async ({ page }) => {
     { key: "2", section: 2, total: 7, heading: "Two Ways of Seeing a Person", hud: "Fatima" },
     { key: "3", section: 3, total: 9, heading: "The Objective Lens", hud: "Iman fatima" },
     { key: "4", section: 4, total: 6, heading: "The Projective Lens", hud: "Mahnoor" },
-    { key: "5", section: 5, total: 14, heading: "Ten Cards, Three Drawings", hud: "Abdullah umar" },
+    { key: "5", section: 5, total: 13, heading: "Ten Cards, Three Drawings", hud: "Abdullah umar" },
   ];
 
   for (const cover of covers) {
@@ -303,7 +303,7 @@ test("every section provides a live activity or quiz", async ({ page }) => {
     { section: 2, slide: 4, total: 7, heading: "Observe Us" },
     { section: 4, slide: 6, total: 6, heading: "What Do You See?" },
     { section: 4, slide: 5, total: 6, heading: "Complete the Sentence" },
-    { section: 5, slide: 10, total: 14, heading: "Read the Drawing" },
+    { section: 5, slide: 10, total: 13, heading: "Read the Drawing" },
   ];
 
   for (const activity of activities) {
@@ -386,19 +386,15 @@ test("section five keeps its activity, comparison, references, and closing order
 
   await gotoSlide(page, 5, 11);
   await expect(page.getByTestId("slide-heading")).toContainText("Projective vs Objective Assessment");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 11/14");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 11/13");
 
   await gotoSlide(page, 5, 12);
-  await expect(page.getByTestId("slide-heading")).toContainText("Foundational Literature");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 12/14");
+  await expect(page.getByTestId("slide-heading")).toContainText("Conclusion");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 12/13");
 
   await gotoSlide(page, 5, 13);
-  await expect(page.getByTestId("slide-heading")).toContainText("Two Lenses, One Person");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 13/14");
-
-  await gotoSlide(page, 5, 14);
   await expect(page.getByTestId("slide-heading")).toContainText("Thank You");
-  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 14/14");
+  await expect(page.getByTestId("slide-indicator")).toHaveText("Section 5 · 13/13");
 });
 
 test("section one completes through builds and slides, then persists", async ({ page }) => {

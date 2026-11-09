@@ -861,32 +861,22 @@ export const SECTIONS: readonly Section[] = [{
           "This table is the anchor of the whole presentation. Walk each row slowly. The contrast is not a morality tale: each column buys something the other cannot. The final closing slide turns that contrast into a professional stance.",
       },
       {
-        id: "5-references",
-        variant: "references",
-        heading: "Foundational Literature",
-        subheading: "Seminal texts and empirical sources in personality assessment",
-        items: [
-          "American Psychological Association. (2017). **Ethical principles of psychologists and code of conduct**. American Psychologist, 72(7), 890–908.",
-          "Costa, P. T., Jr., & McCrae, R. R. (2008). The Revised NEO Personality Inventory (NEO-PI-R). In **The SAGE Handbook of Personality Theory and Assessment** (pp. 179–198). SAGE.",
-          "Exner, J. E., & Erdberg, P. (2005). **The Rorschach: A Comprehensive System** (Vol. 2, 3rd ed.). John Wiley & Sons.",
-          "Hathaway, S. R., & McKinley, J. C. (1940). A multiphasic personality schedule (Minnesota). **The Journal of Psychology**, 10(2), 249–254.",
-          "Murray, H. A. (1943). **Thematic Apperception Test Manual**. Harvard University Press.",
-        ],
-        builds: 5,
-        status: "draft",
-        notes:
-          "Keep this slide brief. These are the foundational sources behind the methods discussed. The references are marked draft until every citation is checked against the final handout. Do not read them aloud; leave them on screen for questions.",
-      },
-      {
-        id: "5-closing",
+        id: "5-conclusion",
         variant: "closing",
-        heading: "Two Lenses, One Person",
+        heading: "Conclusion",
         subheading:
-          "Projective methods offer depth, ambiguity, and access to implicit life. Objective methods offer structure, reliability, and fair comparison. Ethical assessment uses both — and never reduces a person to a single score.",
+          "Psychological assessment is not about putting people into boxes. It is about understanding them as multi-dimensional individuals.",
+        items: [
+          "**Personality** is the relatively stable pattern of thinking, feeling, and behaving — it never reduces a person to a label.",
+          "**Formal and informal** methods each reveal a different kind of truth; best practice combines both.",
+          "**Projective** methods offer depth, ambiguity, and access to implicit life; **objective** methods offer structure, reliability, and fair comparison.",
+          "**Ethical assessment** uses multiple methods, interprets results with trained professionals, and never judges a person's worth.",
+          "**Multimethod assessment** integrates qualitative nuance with quantitative precision — the whole person, not a single score.",
+        ],
         builds: 0,
         status: "final",
         notes:
-          "Deliver the closing thesis: psychological assessment is not about putting people into boxes, but understanding them as multi-dimensional individuals. Multimethod assessment integrates qualitative nuance with quantitative precision. End by thanking the audience and inviting questions.",
+          "Deliver the closing thesis of the entire presentation. Walk through the five points one by one. Personality is a pattern, not a label. Formal and informal methods complement each other. Projective and objective traditions each buy something the other cannot. Ethical assessment never reduces a person to a score. End by thanking the audience and inviting questions.",
       },
       {
         id: "5-thanks",
