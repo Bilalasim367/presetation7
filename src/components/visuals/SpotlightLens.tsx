@@ -31,7 +31,7 @@ export function SpotlightLens({ active }: { active: boolean }) {
       className="pointer-events-none fixed inset-0 z-[35]"
       aria-hidden
       style={{
-        background: `radial-gradient(circle 260px at ${pos.x}px ${pos.y}px, transparent 0%, color-mix(in srgb, var(--t-bg) 55%, transparent) 75%, color-mix(in srgb, var(--t-bg) 78%, transparent) 100%)`,
+        background: `radial-gradient(circle 320px at ${pos.x}px ${pos.y}px, color-mix(in srgb, var(--t-accent) 14%, transparent) 0%, transparent 70%)`,
       }}
     />
   );

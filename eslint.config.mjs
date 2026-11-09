@@ -15,6 +15,8 @@ const eslintConfig = [
     ignores: [
       ".next/**",
       "out/**",
+      ".vercel/**",
+      ".playwright-mcp/**",
       "node_modules/**",
       "playwright-report/**",
       "test-results/**",

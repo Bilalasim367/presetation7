@@ -23,6 +23,7 @@ import { ProgressBar } from "./stage/ProgressBar";
 import { NotesOverlay } from "./stage/NotesOverlay";
 import { ShortcutsOverlay } from "./stage/ShortcutsOverlay";
 import { BlankScreen } from "./stage/BlankScreen";
+import { ThankYouScreen } from "./stage/ThankYouScreen";
 import { CursorFollower } from "./visuals/CursorFollower";
 import { InkblotReveal } from "./intro/InkblotReveal";
 import { FloatingSymbols } from "./visuals/FloatingSymbols";
@@ -73,6 +74,7 @@ export function Presentation() {
   const [themePulse, setThemePulse] = useState(0);
   const [celebrating, setCelebrating] = useState(false);
   const [inkActive, setInkActive] = useState(false);
+  const [thankYouDismissed, setThankYouDismissed] = useState(false);
   const previousTheme = useRef(state.theme);
   const previousCompletedSize = useRef(state.completed.size);
 
@@ -169,6 +171,12 @@ export function Presentation() {
     previousTheme.current = state.theme;
     setThemePulse((value) => value + 1);
   }, [state.theme]);
+
+  useEffect(() => {
+    if (state.completed.size < 5) {
+      setThankYouDismissed(false);
+    }
+  }, [state.completed]);
 
   useEffect(() => {
     if (intro === "deck") {
@@ -369,6 +377,10 @@ export function Presentation() {
           </AnimatePresence>
         </>
       )}
+
+      {state.view === "hub" && state.completed.size === 5 && !thankYouDismissed ? (
+        <ThankYouScreen onContinue={() => setThankYouDismissed(true)} />
+      ) : null}
 
       {celebrating ? (
         <motion.div

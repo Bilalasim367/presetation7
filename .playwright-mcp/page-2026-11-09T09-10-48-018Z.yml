@@ -1,0 +1,44 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - generic [aria-hidden]: "05"
+        - generic [ref=e8]:
+          - paragraph [ref=e9]: Projective and Objective Assessment
+          - heading "Thank You" [level=1] [ref=e10]
+          - paragraph [ref=e11]: Personality Assessment · Projective and Objective Assessment · Questions and discussion
+          - paragraph [ref=e13]: Personality Assessment
+      - generic [aria-hidden]:
+        - generic: "05"
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - generic:
+          - timer:
+            - generic: Time
+            - generic: 00:02
+            - generic: / 05:00
+          - button "Keyboard shortcuts" [ref=e14]: "?"
+        - generic: Rorschach & HTP · Abdullah umar
+        - generic: Section 5 · 12/12
+      - generic [aria-hidden]:
+        - generic: "?"
+        - generic: ○
+        - generic: ◊
+        - generic: "?"
+        - generic: ○
+        - generic: ◊
+        - generic: "?"
+        - generic: ○
+        - generic: ◊
+        - generic: "?"
+        - generic: ○
+        - generic: ◊
+        - generic: "?"
+        - generic: ○
+      - button "Previous build or slide" [ref=e15]
+      - button "Next build or slide" [ref=e18]
+  - alert [ref=e21]
