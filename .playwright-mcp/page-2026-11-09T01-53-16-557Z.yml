@@ -1,0 +1,40 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e324]:
+        - generic [aria-hidden]: "04"
+        - generic [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]: Section 04 · Objective
+            - heading "Small Quiz" [level=1] [ref=e334]
+            - paragraph [ref=e335]: Four questions · answer before the reveal
+          - article [ref=e343]:
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]: Question 01
+                - generic [ref=e347]: A or B
+              - heading "In objective assessment, how is the answer given?" [level=2] [ref=e348]
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - generic [ref=e351]: A
+                - generic [ref=e352]: According to your opinion
+              - generic [ref=e353]: Already fixed
+      - generic [aria-hidden]:
+        - generic: "04"
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - generic:
+          - timer:
+            - generic: Time
+            - generic: 01:36
+            - generic: / 04:00
+          - button "Keyboard shortcuts" [ref=e108]: "?"
+        - generic: Objective · Student 4
+        - generic: Section 4 · 7/8
+      - button "Previous build or slide" [ref=e203]
+      - button "Next build or slide" [ref=e109]
+  - alert [ref=e112]: Two Ways of Seeing a Person · Section 2 · Personality Assessment

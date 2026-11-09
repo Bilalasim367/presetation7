@@ -1,0 +1,52 @@
+- generic [active] [ref=f21e1]:
+  - main [ref=f21e2]:
+    - generic [ref=f21e3]:
+      - generic [ref=f21e162]:
+        - generic [aria-hidden]: "02"
+        - generic [ref=f21e163]:
+          - generic [ref=f21e164]:
+            - generic [ref=f21e165]:
+              - generic [ref=f21e166]: Section 02 · Importance
+              - heading "Why Assessment Matters" [level=1] [ref=f21e173]
+              - paragraph [ref=f21e174]: From everyday impression to structured understanding
+            - generic [ref=f21e175]:
+              - paragraph [ref=f21e178]:
+                - generic [ref=f21e179]:
+                  - text: Assessment turns
+                  - strong [ref=f21e180]: observation
+                  - text: into evidence that can guide real decisions.
+              - paragraph [ref=f21e183]:
+                - generic [ref=f21e184]:
+                  - text: "Its purpose reaches across five domains:"
+                  - strong [ref=f21e185]: clinical, counseling, organizational, educational, and research
+                  - text: .
+            - generic [ref=f21e186]:
+              - generic [ref=f21e187]: Animated figure
+              - generic [ref=f21e189]: Move the cursor to shift the form
+          - complementary [ref=f21e190]:
+            - generic [ref=f21e191]:
+              - paragraph [ref=f21e192]: Fig. 02 · Five domains
+              - generic [ref=f21e193]: 3D · Live
+            - img "Purpose diagram" [ref=f21e196]
+            - generic [ref=f21e200]:
+              - paragraph [ref=f21e201]: Five domains orbiting a shared purpose
+              - generic [ref=f21e202]: "02"
+      - generic [aria-hidden]:
+        - generic: "02"
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - generic:
+          - timer:
+            - generic: Time
+            - generic: 00:02
+            - generic: / 04:00
+          - button "Keyboard shortcuts" [ref=f21e108]: "?"
+        - generic: Importance · Student 2
+        - generic: Section 2 · 1/4
+      - button "Previous build or slide" [ref=f21e157]
+      - button "Next build or slide" [ref=f21e109]
+  - alert [ref=f21e112]: Why Assessment Matters · Section 2 · Personality Assessment

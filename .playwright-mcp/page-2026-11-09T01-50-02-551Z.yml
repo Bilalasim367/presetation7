@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e115]:
+        - generic [aria-hidden]: "01"
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: Section 01 · Introduction
+              - heading "The Persona Behind the Pattern" [level=1] [ref=e127]
+              - paragraph [ref=e128]: Personality and the science of understanding people
+            - generic [ref=e129]:
+              - paragraph [ref=e132]:
+                - generic [ref=e133]:
+                  - text: Personality is the relatively stable pattern of
+                  - strong [ref=e134]: thinking, feeling, and behaving
+                  - text: .
+              - paragraph [ref=e137]:
+                - generic [ref=e138]:
+                  - text: Assessment measures that pattern — it
+                  - strong [ref=e139]: never reduces a person to a label
+                  - text: .
+            - generic [ref=e140]:
+              - generic [ref=e141]: Animated figure
+              - generic [ref=e143]: Move the cursor to shift the form
+          - complementary [ref=e144]:
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: Fig. 01 · Persona field
+              - generic [ref=e147]: 3D · Live
+            - img "Persona diagram" [ref=e150]
+            - generic [ref=e154]:
+              - paragraph [ref=e155]: Five nested fields · one relatively stable core
+              - generic [ref=e156]: "01"
+      - generic [aria-hidden]:
+        - generic: "01"
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - generic:
+          - timer:
+            - generic: Time
+            - generic: 00:02
+            - generic: / 04:00
+          - button "Keyboard shortcuts" [ref=e108]: "?"
+        - generic: Introduction · Bilal
+        - generic: Section 1 · 1/8
+      - button "Previous build or slide" [ref=e157]
+      - button "Next build or slide" [ref=e109]
+  - alert [ref=e112]: The Persona Behind the Pattern · Section 1 · Personality Assessment

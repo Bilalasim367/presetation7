@@ -1,0 +1,71 @@
+- generic [active] [ref=f21e1]:
+  - main [ref=f21e2]:
+    - generic [ref=f21e3]:
+      - generic [ref=f21e5]:
+        - generic [ref=f21e6]:
+          - generic [ref=f21e7]:
+            - paragraph [ref=f21e10]: Overview · five parts
+            - heading "Personality Assessment" [level=1] [ref=f21e11]
+            - paragraph [ref=f21e12]: Projective and Objective Assessment
+            - paragraph [ref=f21e15]: Introduction to Psychology · University · 07 November 2026
+          - complementary [ref=f21e16]:
+            - paragraph [ref=f21e17]: The plan
+            - paragraph [ref=f21e18]: Five short sections. Choose a part, present it, then return here.
+            - generic [ref=f21e19]:
+              - generic [ref=f21e20]: Complete
+              - generic [ref=f21e21]: 0 / 5
+            - generic [ref=f21e28]:
+              - generic [ref=f21e29]: Enter
+              - generic [ref=f21e30]: begin the next available section
+        - generic "Presentation sections" [ref=f21e31]:
+          - 'button "Open section 1: Introduction — Student 1" [ref=f21e32]':
+            - generic [aria-hidden] [ref=f21e35]: "01"
+            - generic [ref=f21e42]:
+              - paragraph [ref=f21e43]: Introduction
+              - paragraph [ref=f21e44]: Student 1
+            - generic [ref=f21e45]:
+              - generic [ref=f21e46]: 3 min
+              - generic [ref=f21e47]: Suggested
+          - 'button "Open section 2: Importance & Purpose — Student 2" [ref=f21e49]':
+            - generic [aria-hidden] [ref=f21e52]: "02"
+            - generic [ref=f21e58]:
+              - paragraph [ref=f21e59]: Importance & Purpose
+              - paragraph [ref=f21e60]: Student 2
+            - generic [ref=f21e61]:
+              - generic [ref=f21e62]: 4 min
+              - generic [ref=f21e63]: Ready
+          - 'button "Open section 3: Classification of Methods — Student 3" [ref=f21e64]':
+            - generic [aria-hidden] [ref=f21e67]: "03"
+            - generic [ref=f21e73]:
+              - paragraph [ref=f21e74]: Classification of Methods
+              - paragraph [ref=f21e75]: Student 3
+            - generic [ref=f21e76]:
+              - generic [ref=f21e77]: 4 min
+              - generic [ref=f21e78]: Ready
+          - 'button "Open section 4: Projective Assessment — Student 4" [ref=f21e79]':
+            - generic [aria-hidden] [ref=f21e82]: "04"
+            - generic [ref=f21e87]:
+              - paragraph [ref=f21e88]: Projective Assessment
+              - paragraph [ref=f21e89]: Student 4
+            - generic [ref=f21e90]:
+              - generic [ref=f21e91]: 4 min
+              - generic [ref=f21e92]: Ready
+          - 'button "Open section 5: Objective Assessment — Student 5" [ref=f21e93]':
+            - generic [aria-hidden] [ref=f21e96]: "05"
+            - generic [ref=f21e102]:
+              - paragraph [ref=f21e103]: Objective Assessment
+              - paragraph [ref=f21e104]: Student 5
+            - generic [ref=f21e105]:
+              - generic [ref=f21e106]: 5 min
+              - generic [ref=f21e107]: Ready
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - button "Keyboard shortcuts" [ref=f21e108]: "?"
+        - generic: Five sections · 20 minutes
+        - generic: Press Enter to begin · 1–5 to choose
+      - button "Next build or slide" [ref=f21e109]
+  - alert [ref=f21e112]

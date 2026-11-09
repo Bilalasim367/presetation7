@@ -1,0 +1,49 @@
+{
+  "name": "personality-assessment-presentation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Presenter-controlled, offline-first university presentation on projective and objective personality assessment.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "serve out",
+    "preview:test": "serve out --listen 4173",
+    "start": "serve out",
+    "lint": "eslint . && node scripts/check-colors.mjs",
+    "typecheck": "tsc --noEmit",
+    "check:colors": "node scripts/check-colors.mjs",
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/e2e/navigation.spec.ts",
+    "screenshots": "node scripts/capture-screenshots.mjs",
+    "verify": "npm run typecheck && npm run lint && npm run test"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/playfair-display": "5.3.0",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "lucide-react": "1.70.0",
+    "motion": "14.10.1",
+    "next": "15.5.29",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "serve": "14.2.7",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.7",
+    "@playwright/test": "1.65.0",
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.29",
+    "postcss": "8.5.32",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

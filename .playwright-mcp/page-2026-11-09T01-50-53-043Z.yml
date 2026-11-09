@@ -1,0 +1,50 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e162]:
+        - generic [aria-hidden]: "02"
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]: Section 02 · Formal & Informal
+              - heading "Two Ways of Seeing a Person" [level=1] [ref=e173]
+              - paragraph [ref=e174]: Formal structure and informal observation
+            - generic [ref=e175]:
+              - paragraph [ref=e178]:
+                - generic [ref=e179]:
+                  - strong [ref=e180]: Formal
+                  - text: assessment standardises the same questions and scoring for everyone.
+              - paragraph [ref=e183]:
+                - generic [ref=e184]:
+                  - strong [ref=e185]: Informal
+                  - text: assessment stays flexible and natural — and each reveals a different kind of truth.
+            - generic [ref=e186]:
+              - generic [ref=e187]: Animated figure
+              - generic [ref=e189]: Move the cursor to shift the form
+          - complementary [ref=e190]:
+            - generic [ref=e191]:
+              - paragraph [ref=e192]: Fig. 06 · Structure spectrum
+              - generic [ref=e193]: 3D · Live
+            - img "Formal and informal diagram" [ref=e196]
+            - generic [ref=e200]:
+              - paragraph [ref=e201]: Rigid grid and flowing ribbon · one spectrum
+              - generic [ref=e202]: "02"
+      - generic [aria-hidden]:
+        - generic: "01"
+      - generic:
+        - generic:
+          - generic [aria-hidden]: P
+          - generic:
+            - generic: Personality Assessment
+            - generic: Five parts
+        - generic:
+          - timer:
+            - generic: Time
+            - generic: 00:00
+            - generic: / 04:00
+          - button "Keyboard shortcuts" [ref=e108]: "?"
+        - generic: Introduction · Bilal
+        - generic: Section 1 · 8/8
+      - button "Previous build or slide" [ref=e203]
+      - button "Next build or slide" [ref=e109]
+  - alert [ref=e112]: Two Ways of Seeing a Person · Section 2 · Personality Assessment

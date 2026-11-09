@@ -1,0 +1,20 @@
+[   19492ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3000/:0
+[   20843ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:31148
+[   21294ms] TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\.next\server\webpack-runtime.js:25:42)
+    at Object.require (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:28568)
+    at globalThis.__next_require__ (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:29391)
+    at requireModule (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:318424)
+    at initializeModuleChunk (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:348024)
+    at getOutlinedModel (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:357907)
+    at <unknown> (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:366128)
+    at ResponseInstance._fromJSON (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:366219)
+    at JSON.parse (<anonymous>)
+    at initializeModelChunk (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:347415)
+    at resolveModelChunk (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:345686)
+    at processFullStringRow (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:385239)
+    at <unknown> (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:387642)
+    at processBinaryChunk (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:387714)
+    at progress (file://C:\Users\Bilal\OneDrive\Desktop\presentaion\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:2:389242)
+[   21240ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[   21325ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3000/favicon.ico:0
