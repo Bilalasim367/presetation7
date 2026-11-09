@@ -24,7 +24,7 @@ export const meta = {
   instructor: "Course Instructor",
   date: "07 November 2026",
   language: "English",
-students: ["Bilal", "Fatima", "Iman fatima", "Mahnoor", "Abdullah umar"],
+  students: ["Bilal", "Fatima", "Mahnoor", "Iman fatima", "Abdullah umar"],
   targetSeconds: {
     1: 240,
     2: 240,
