@@ -468,20 +468,19 @@ export const SECTIONS: readonly Section[] = [{
       },
       {
         id: "3-tradeoffs",
-        variant: "focus",
+        variant: "bullets",
         heading: "Advantages of Objective Assessment",
         subheading: "What structure buys",
         items: [
-          {
-            title: "Advantages",
-            icon: "ClipboardCheck",
-            text: "**Fast scoring, no personal bias, the same rules for everyone, and clear results** that can be compared across people and settings.",
-          },
+          "**Fast scoring** — results are available immediately after administration.",
+          "**No personal bias** — a scoring key, not an opinion, determines the result.",
+          "**Same rules for everyone** — standardised administration and scoring allow fair comparison.",
+          "**Clear results** — scores can be compared across people and settings.",
         ],
-        builds: 1,
+        builds: 4,
         status: "final",
         notes:
-          "Hold both sides at once. Objective tests are excellent when comparison and efficiency matter; they are weak when the question requires nuance, contradiction, or material the person cannot report directly. This is the trade-off the final section will compare.",
+          "Walk through the four advantages. Objective tests are excellent when comparison and efficiency matter. The limitations of this approach are covered in the next section, where the two traditions are compared side by side.",
       },
       {
         id: "3-quiz",
